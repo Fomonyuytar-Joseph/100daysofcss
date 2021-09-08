@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin:20px;
+            display: grid;
+            grid-template-columns: 200px 2fr 20% 1fr;
+            grid-template-rows:5rem 3rem;
+        }
+        .el1{
+            background-color: red;
+        }
+        .el2{
+            background-color: blue;
+        }
+        .el3{
+            background-color: green;
+            grid-column-start: 3;
+            grid-column-end: 5 ;
+            grid-row-start: 1;
+            grid-row-end:3;
+        }
+        .el4{
+            background-color: hotpink;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="el1">Element 1</div>
+        <div class="el2">Element 2</div>
+        <div class="el3">Element 3</div>
+        <div class="el4">Element 4</div>
+    </div>
+    
+</body>
+</html>
