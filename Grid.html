@@ -8,27 +8,33 @@
     <style>
         .container{
             margin:20px;
+            height:500px;
             display: grid;
-            grid-template-columns: 200px 2fr 20% 1fr;
-            grid-template-rows:5rem 3rem;
+            grid-template-columns:repeat(4, 25%) ;
+            /* grid-template-columns: 200px 5rem 20% auto; */
+            grid-template-rows:5rem minmax(10px ,auto) 100px;
         }
         .el1{
             background-color: red;
         }
         .el2{
             background-color: blue;
+            grid-column-start: 1;
+            grid-column-end: -1;
+            grid-row-start: 2;
+           
         }
         .el3{
             background-color: green;
-            grid-column-start: 3;
-            grid-column-end: 5 ;
+            grid-column-start: 2;
+            grid-column-end: span 3  ;
             grid-row-start: 1;
             grid-row-end:3;
         }
         .el4{
             background-color: hotpink;
-            grid-column-start: 1;
-            grid-column-end: 3;
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
         }
     </style>
 </head>
